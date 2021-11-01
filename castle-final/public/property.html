@@ -1,0 +1,1736 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>castlerock | property</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&family=Lora&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="flex flex-col justify-center items-center">
+      <!-- Navbar -->
+      <nav class="bg-white w-full md:max-w-[940px]">
+        <div class="mx-auto px-4 md:px-0">
+          <div class="flex justify-between h-16 border-b">
+            <div class="flex">
+              <div class="flex-shrink-0 flex items-center">
+                <img
+                  class="block lg:hidden h-8 w-auto"
+                  src="/img/Logo.svg"
+                  alt="CastleRock"
+                />
+                <img
+                  class="hidden lg:block h-10 w-auto"
+                  src="/img/Logo.svg"
+                  alt="CastleRock"
+                />
+              </div>
+              <div class="hidden md:ml-6 md:flex md:items-center">
+                <a
+                  href="index.html"
+                  class="
+                    text-blue-dark
+                    hover:text-blue-dark
+                    px-2
+                    py-2
+                    rounded-md
+                    text-sm
+                    font-medium
+                  "
+                  aria-current="page"
+                  >Home</a
+                >
+
+                <a
+                  href="#"
+                  class="
+                    hover:text-blue-dark
+                    px-3
+                    py-2
+                    rounded-md
+                    text-sm
+                    font-medium
+                  "
+                  >Owner financing</a
+                >
+
+                <a
+                  href="how-it-work.html"
+                  class="
+                    hover:text-blue-dark
+                    px-3
+                    py-2
+                    rounded-md
+                    text-sm
+                    font-medium
+                  "
+                  >How it works</a
+                >
+
+                <a
+                  href="about-us.html"
+                  class="
+                    hover:text-blue-dark
+                    px-3
+                    py-2
+                    rounded-md
+                    text-sm
+                    font-medium
+                  "
+                  >About Us</a
+                >
+
+                <a
+                  href="team.html"
+                  class="
+                    hover:text-blue-dark
+                    px-3
+                    py-2
+                    rounded-md
+                    text-sm
+                    font-medium
+                  "
+                  >Our Team</a
+                >
+                <a
+                  href="#"
+                  class="
+                    hover:text-blue-dark
+                    px-3
+                    py-2
+                    rounded-md
+                    text-sm
+                    font-medium
+                  "
+                  >Contact Us</a
+                >
+              </div>
+              <div class="ml-4 mr-2 flex items-center md:hidden">
+                <!-- Mobile menu button -->
+                <button
+                  id="toggleBtn"
+                  type="button"
+                  class="
+                    inline-flex
+                    items-center
+                    justify-center
+                    p-2
+                    rounded-md
+                    text-gray-400
+                    hover:text-blue-dark
+                    focus:outline-none
+                    focus:ring-2
+                    focus:ring-inset
+                    focus:ring-white
+                  "
+                  aria-controls="mobile-menu"
+                  aria-expanded="false"
+                >
+                  <span class="sr-only">Open main menu</span>
+
+                  <svg
+                    id="outlineMenu"
+                    class="block h-6 w-6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
+                  </svg>
+
+                  <svg
+                    id="outlineX"
+                    class="hidden h-6 w-6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="flex items-center">
+              <div class="flex-shrink-0">
+                <button
+                  type="button"
+                  class="
+                    relative
+                    inline-flex
+                    items-center
+                    px-4
+                    py-2
+                    border border-transparent
+                    shadow-sm
+                    text-sm
+                    font-medium
+                    rounded-md
+                    text-white
+                    bg-blue-dark
+                    hover:bg-blue-dark
+                    focus:outline-none
+                    focus:ring-2
+                    focus:ring-offset-2
+                    focus:ring-offset-gray-800
+                    focus:ring-blue-dark
+                  "
+                >
+                  <span class="uppercase">make an offer</span>
+                </button>
+                <a
+                  href="#"
+                  class="
+                    text-[#1E91D6]
+                    hover:bg-gray-700 hover:text-white
+                    px-3
+                    py-2
+                    rounded-md
+                    text-sm
+                    font-medium
+                    hidden
+                    md:inline-block
+                  "
+                  >Sign In
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hidden md:hidden" id="mobile-menu">
+          <div class="text-center px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <a
+              href="#"
+              class="
+                font-barlow
+                block
+                py-4
+                border-b
+                rounded-md
+                text-xs
+                font-medium
+              "
+              aria-current="page"
+              >Home</a
+            >
+
+            <a
+              href="#"
+              class="
+                font-barlow
+                hover:text-blue-dark
+                block
+                py-4
+                border-b
+                rounded-md
+                text-xs
+                font-medium
+              "
+              >Owner Financing</a
+            >
+
+            <a
+              href="#"
+              class="
+                font-barlow
+                hover:text-blue-dark
+                block
+                py-4
+                border-b
+                rounded-md
+                text-xs
+                font-medium
+              "
+              >How it works</a
+            >
+
+            <a
+              href="#"
+              class="
+                font-barlow
+                hover:text-blue-dark
+                block
+                py-4
+                border-b
+                rounded-md
+                text-xs
+                font-medium
+              "
+              >About Us</a
+            >
+            <a
+              href="#"
+              class="
+                font-barlow
+                hover:text-blue-dark
+                block
+                py-4
+                border-b
+                rounded-md
+                text-xs
+                font-medium
+              "
+              >Our Team
+            </a>
+            <a
+              href="#"
+              class="
+                font-barlow
+                hover:text-blue-dark
+                block
+                py-4
+                border-b
+                rounded-md
+                text-xs
+                font-medium
+              "
+              >Contact Us</a
+            >
+            <a
+              href="#"
+              class="
+                text-[#1E91D6]
+                hover:text-blue-dark
+                font-barlow
+                block
+                py-4
+                rounded-md
+                text-xs
+                font-medium
+              "
+              >Sign In</a
+            >
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero section -->
+
+      <section
+        class="
+          md:h-64
+          h-auto
+          flex flex-col
+          justify-center
+          items-center
+          bg-center bg-no-repeat
+          w-full
+          bg-blue-dark
+          relative
+        "
+        style="background-image: url(/img/who-are.png)"
+      >
+        <div
+          class="
+            flex flex-col
+            w-full
+            max-w-[940px]
+            mx-auto
+            text-center
+            z-10
+            md:p-0
+            pt-2
+          "
+        >
+          <!-- hero title -->
+          <h4 class="text-white font-lora text-3xl mb-8 px-2 md:px-0 text-left">
+            164 homes available for you
+          </h4>
+          <!-- Search Input -->
+          <div
+            class="
+              flex
+              md:flex-row
+              flex-col
+              justify-between
+              bg-white
+              md:w-full
+              w-[96%]
+              mx-auto
+              md:h-16 md:mb-6
+              mb-2
+              z-10
+              rounded
+              md:p-2
+            "
+          >
+            <div
+              class="
+                flex
+                md:flex-1 md:ml-4
+                mx-4
+                md:mx-0
+                justify-start
+                items-center
+              "
+            >
+              <img
+                src="/img/search-magnify-glass.png"
+                class="max-w-[22px] max-h-[22px] mr-3"
+              />
+              <input
+                type="text"
+                class="
+                  w-full
+                  text-black-light
+                  md:text-sm
+                  text-xs
+                  font-barlow
+                  h-16
+                  md:h-full
+                  outline-none
+                "
+                placeholder="Enter an Address, City, State, or Zip code"
+              />
+            </div>
+            <button
+              class="
+                uppercase
+                text-white
+                bg-[#F3AC1A]
+                h-16
+                py-5
+                md:py-0 md:h-full
+                px-5
+                rounded
+              "
+            >
+              Search
+            </button>
+          </div>
+
+          <button
+            class="
+              md:hidden
+              uppercase
+              text-white
+              bg-white bg-opacity-[0.25]
+              shadow
+              h-10
+              py-2
+              md:py-0 md:h-full
+              px-5
+              rounded-md
+              w-[96%]
+              mx-auto
+              mb-2
+            "
+            id="filter-btn"
+          >
+            Filter
+          </button>
+
+          <!-- Search filters -->
+          <div
+            class="
+              flex flex-col
+              md:flex-row
+              z-10
+              md:justify-between
+              p-2
+              md:p-0
+              bg-white
+              md:bg-transparent
+            "
+            id="filter-collapse"
+          >
+            <div class="flex justify-between md:hidden mb-5">
+              <h3 class="font-lora text-xl">Filters</h3>
+              <img src="/img/close.svg" class="mr-1" id="close-btn" />
+            </div>
+            <div
+              class="relative md:max-w-[184px] mb-[10px] md:mb-0 text-blue-dark"
+            >
+              <select
+                class="
+                  md:max-w-[184px]
+                  w-full
+                  h-10
+                  pl-3
+                  pr-6
+                  text-sm
+                  placeholder-gray-600
+                  border
+                  rounded
+                  appearance-none
+                  focus:shadow-outline
+                "
+                placeholder="Regular input"
+              >
+                <option>Select price range</option>
+                <option>Another option</option>
+                <option>And one more</option>
+              </select>
+              <div
+                class="
+                  absolute
+                  inset-y-0
+                  -right-1
+                  flex
+                  align-middle
+                  items-center
+                  px-2
+                  pointer-events-none
+                "
+              >
+                <svg
+                  class="w-4 h-4 fill-current text-blue-dark"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                    fill-rule="evenodd"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+
+            <div
+              class="relative md:max-w-[184px] mb-[10px] md:mb-0 text-blue-dark"
+            >
+              <select
+                class="
+                  md:max-w-[184px]
+                  w-full
+                  h-10
+                  pl-3
+                  pr-6
+                  text-sm
+                  placeholder-gray-600
+                  border
+                  rounded
+                  appearance-none
+                  focus:shadow-outline
+                "
+                placeholder="Regular input"
+              >
+                <option>Select price range</option>
+                <option>Another option</option>
+                <option>And one more</option>
+              </select>
+              <div
+                class="
+                  absolute
+                  inset-y-0
+                  -right-1
+                  flex
+                  align-middle
+                  items-center
+                  px-2
+                  pointer-events-none
+                "
+              >
+                <svg
+                  class="w-4 h-4 fill-current text-blue-dark"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                    fill-rule="evenodd"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div
+              class="relative md:max-w-[184px] mb-[10px] md:mb-0 text-blue-dark"
+            >
+              <select
+                class="
+                  md:max-w-[184px]
+                  w-full
+                  h-10
+                  pl-3
+                  pr-6
+                  text-sm
+                  placeholder-gray-600
+                  border
+                  rounded
+                  appearance-none
+                  focus:shadow-outline
+                "
+                placeholder="Regular input"
+              >
+                <option>Select price range</option>
+                <option>Another option</option>
+                <option>And one more</option>
+              </select>
+              <div
+                class="
+                  absolute
+                  inset-y-0
+                  -right-1
+                  flex
+                  align-middle
+                  items-center
+                  px-2
+                  pointer-events-none
+                "
+              >
+                <svg
+                  class="w-4 h-4 fill-current text-blue-dark"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                    fill-rule="evenodd"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div
+              class="relative md:max-w-[184px] mb-[10px] md:mb-0 text-blue-dark"
+            >
+              <select
+                class="
+                  md:max-w-[184px]
+                  w-full
+                  h-10
+                  pl-3
+                  pr-6
+                  text-sm
+                  placeholder-gray-600
+                  border
+                  rounded
+                  appearance-none
+                  focus:shadow-outline
+                "
+                placeholder="Regular input"
+              >
+                <option>Select price range</option>
+                <option>Another option</option>
+                <option>And one more</option>
+              </select>
+              <div
+                class="
+                  absolute
+                  inset-y-0
+                  -right-1
+                  flex
+                  align-middle
+                  items-center
+                  px-2
+                  pointer-events-none
+                "
+              >
+                <svg
+                  class="w-4 h-4 fill-current text-blue-dark"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                    fill-rule="evenodd"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+
+            <div
+              class="relative md:max-w-[184px] mb-[10px] md:mb-0 text-blue-dark"
+            >
+              <select
+                class="
+                  md:max-w-[184px]
+                  w-full
+                  h-10
+                  pl-3
+                  pr-6
+                  text-sm
+                  placeholder-gray-600
+                  border
+                  rounded
+                  appearance-none
+                  focus:shadow-outline
+                "
+                placeholder="Regular input"
+              >
+                <option>Select price range</option>
+                <option>Another option</option>
+                <option>And one more</option>
+              </select>
+              <div
+                class="
+                  absolute
+                  inset-y-0
+                  -right-1
+                  flex
+                  align-middle
+                  items-center
+                  px-2
+                  pointer-events-none
+                "
+              >
+                <svg
+                  class="w-4 h-4 fill-current text-blue-dark"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                    fill-rule="evenodd"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div
+              class="relative md:max-w-[184px] mb-[10px] md:mb-0 text-blue-dark"
+            >
+              <select
+                class="
+                  md:max-w-[184px]
+                  w-full
+                  h-10
+                  pl-3
+                  pr-6
+                  text-sm
+                  placeholder-gray-600
+                  border
+                  rounded
+                  appearance-none
+                  focus:shadow-outline
+                "
+                placeholder="Regular input"
+              >
+                <option>Select price range</option>
+                <option>Another option</option>
+                <option>And one more</option>
+              </select>
+              <div
+                class="
+                  absolute
+                  inset-y-0
+                  -right-1
+                  flex
+                  align-middle
+                  items-center
+                  px-2
+                  pointer-events-none
+                "
+              >
+                <svg
+                  class="w-4 h-4 fill-current text-blue-dark"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                    fill-rule="evenodd"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <button
+              class="
+                md:hidden
+                uppercase
+                text-white
+                bg-[#F3AC1A]
+                h-10
+                py-2
+                md:py-0 md:h-full
+                px-5
+                rounded-md
+                w-[96%]
+                mx-auto
+                mb-2
+                mt-11
+              "
+            >
+              Apply
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="color-overlay w-full h-full absolute bg-blue-darl opacity-70"
+        ></div>
+      </section>
+
+      <!-- Search Result Section -->
+
+      <div
+        class="
+          flex flex-col
+          bg-gray-100
+          py-16
+          w-full
+          justify-center
+          items-center
+        "
+      >
+        <!-- Search Result inner container -->
+        <div
+          class="
+            flex flex-col
+            justify-center
+            items-center
+            px-2
+            md:px-2
+            max-w-[940px]
+            w-full
+          "
+        >
+          <!-- Search result heading -->
+          <div
+            class="flex w-full justify-between items-center mb-6 px-2 md:px-0"
+          >
+            <h2 class="font-lora md:text-3xl text-2xl text-black-light">
+              Search results
+            </h2>
+            <div class="relative bg-blue-dark text-white rounded">
+              <select
+                class="
+                  h-10
+                  pl-4
+                  pr-0
+                  text-sm
+                  bg-blue-dark
+                  placeholder-gray-600
+                  border
+                  rounded
+                  appearance-none
+                  focus:shadow-outline
+                "
+                placeholder="Regular input"
+              >
+                <option>Sort by</option>
+                <option>Another option</option>
+                <option>And one more</option>
+              </select>
+              <div
+                class="
+                  absolute
+                  inset-y-0
+                  right-6
+                  flex
+                  align-middle
+                  items-center
+                  pointer-events-none
+                "
+              >
+                <svg
+                  class="w-4 h-4 fill-current text-white"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                    fill-rule="evenodd"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <!-- cards -->
+
+          <div
+            class="
+              flex flex-col
+              w-full
+              max-w-[940px]
+              justify-center
+              shadow-lg
+              mb-2
+            "
+          >
+            <div
+              class="flex md:flex-row flex-col bg-white md:h-60 justify-start"
+            >
+              <div class="flex relative">
+                <img
+                  src="/img/card-01.png"
+                  class="
+                    max-h-[240px]
+                    w-full
+                    h-auto
+                    object-cover
+                    md:max-w-[240px]
+                  "
+                />
+              </div>
+              <div
+                class="
+                  flex flex-col
+                  md:flex-row md:px-8
+                  px-3
+                  py-6
+                  flex-1
+                  justify-between
+                "
+              >
+                <div class="flex flex-col">
+                  <span class="font-Barlow text-xs">CASH PRICE</span>
+                  <span
+                    class="
+                      text-black-light
+                      font-medium
+                      text-2xl
+                      md:text-4xl
+                      mb-2
+                    "
+                    >$32,900</span
+                  >
+                  <span class="font-lora text-black-light text-xs md:text-xl"
+                    >3759 Watkins Rd, Millport, NY 14864</span
+                  >
+                  <span class="font-barlow text-black-light text-xs md:text-sm"
+                    >No owner financing available</span
+                  >
+                  <div class="flex mb-6 md:mb-0 mt-3 md:mt-auto">
+                    <div class="flex flex-col">
+                      <div class="flex mb-2">
+                        <img src="/img/hotel-bed-1.svg" />
+                        <span class="font-medium text-black-light text-xl ml-2"
+                          >2</span
+                        >
+                      </div>
+                      <span class="text-xs text-black-light">BEDROOMS</span>
+                    </div>
+                    <div class="flex flex-col mx-8">
+                      <div class="flex mb-2">
+                        <img src="/img/hotel-bath-shower.svg" />
+                        <span class="font-medium text-black-light text-xl ml-2"
+                          >2</span
+                        >
+                      </div>
+                      <span class="text-xs text-black-light">BATHROOMS</span>
+                    </div>
+                    <div class="flex flex-col">
+                      <div class="flex mb-2">
+                        <img src="/img/expand-1.svg" />
+                        <span class="font-medium text-black-light text-xl ml-2"
+                          >1,793</span
+                        >
+                      </div>
+                      <span class="text-xs text-black-light"
+                        >SIZE (SQ.FT.)</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="flex items-end">
+                  <button
+                    class="
+                      text-white
+                      font-barlow font-semibold
+                      uppercase
+                      text-sm
+                      bg-blue-dark
+                      max-w-[130px]
+                      w-[130px]
+                      h-12
+                      py-4
+                      rounded
+                    "
+                  >
+                    Make an offer
+                  </button>
+                  <button
+                    class="
+                      text-white
+                      font-barlow font-semibold
+                      uppercase
+                      text-sm
+                      bg-[#F3AC1A]
+                      max-w-[138px]
+                      w-[138px]
+                      h-12
+                      py-4
+                      rounded
+                      ml-3
+                      flex flex-nowrap
+                      justify-center
+                      align-middle
+                      items-center
+                    "
+                  >
+                    More Info
+                    <img src="/img/right-arrow.svg" class="ml-2" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="
+              flex flex-col
+              w-full
+              max-w-[940px]
+              justify-center
+              shadow-lg
+              mb-2
+            "
+          >
+            <div
+              class="flex md:flex-row flex-col bg-white md:h-60 justify-start"
+            >
+              <div class="flex relative">
+                <img
+                  src="/img/map.png"
+                  class="
+                    max-h-[240px]
+                    w-full
+                    h-auto
+                    object-cover
+                    md:max-w-[240px]
+                  "
+                />
+              </div>
+              <div
+                class="
+                  flex flex-col
+                  md:flex-row md:px-8
+                  px-3
+                  py-6
+                  flex-1
+                  justify-between
+                "
+              >
+                <div class="flex flex-col">
+                  <span class="font-Barlow text-xs">CASH PRICE</span>
+                  <span
+                    class="
+                      text-black-light
+                      font-medium
+                      text-2xl
+                      md:text-4xl
+                      mb-2
+                    "
+                    >$32,900</span
+                  >
+                  <span class="font-lora text-black-light text-xs md:text-xl"
+                    >3759 Watkins Rd, Millport, NY 14864</span
+                  >
+                  <span class="font-barlow text-black-light text-xs md:text-sm"
+                    >No owner financing available</span
+                  >
+                  <div class="flex mb-6 md:mb-0 mt-3 md:mt-auto">
+                    <div class="flex flex-col">
+                      <div class="flex mb-2">
+                        <img src="/img/hotel-bed-1.svg" />
+                        <span class="font-medium text-black-light text-xl ml-2"
+                          >2</span
+                        >
+                      </div>
+                      <span class="text-xs text-black-light">BEDROOMS</span>
+                    </div>
+                    <div class="flex flex-col mx-8">
+                      <div class="flex mb-2">
+                        <img src="/img/hotel-bath-shower.svg" />
+                        <span class="font-medium text-black-light text-xl ml-2"
+                          >2</span
+                        >
+                      </div>
+                      <span class="text-xs text-black-light">BATHROOMS</span>
+                    </div>
+                    <div class="flex flex-col">
+                      <div class="flex mb-2">
+                        <img src="/img/expand-1.svg" />
+                        <span class="font-medium text-black-light text-xl ml-2"
+                          >1,793</span
+                        >
+                      </div>
+                      <span class="text-xs text-black-light"
+                        >SIZE (SQ.FT.)</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="flex items-end">
+                  <button
+                    class="
+                      text-white
+                      font-barlow font-semibold
+                      uppercase
+                      text-sm
+                      bg-blue-dark
+                      max-w-[130px]
+                      w-[130px]
+                      h-12
+                      py-4
+                      rounded
+                    "
+                  >
+                    Make an offer
+                  </button>
+                  <button
+                    class="
+                      text-white
+                      font-barlow font-semibold
+                      uppercase
+                      text-sm
+                      bg-[#F3AC1A]
+                      max-w-[138px]
+                      w-[138px]
+                      h-12
+                      py-4
+                      rounded
+                      ml-3
+                      flex flex-nowrap
+                      justify-center
+                      align-middle
+                      items-center
+                    "
+                  >
+                    More Info
+                    <img src="/img/right-arrow.svg" class="ml-2" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="
+              flex flex-col
+              w-full
+              max-w-[940px]
+              justify-center
+              shadow-lg
+              mb-2
+            "
+          >
+            <div
+              class="flex md:flex-row flex-col bg-white md:h-60 justify-start"
+            >
+              <div class="flex relative">
+                <img
+                  src="/img/card-02.png"
+                  class="
+                    max-h-[240px]
+                    w-full
+                    h-auto
+                    object-cover
+                    md:max-w-[240px]
+                  "
+                />
+              </div>
+              <div
+                class="
+                  flex flex-col
+                  md:flex-row md:px-8
+                  px-3
+                  py-6
+                  flex-1
+                  justify-between
+                "
+              >
+                <div class="flex flex-col">
+                  <span class="font-Barlow text-xs">CASH PRICE</span>
+                  <span
+                    class="
+                      text-black-light
+                      font-medium
+                      text-2xl
+                      md:text-4xl
+                      mb-2
+                    "
+                    >$32,900</span
+                  >
+                  <span class="font-lora text-black-light text-xs md:text-xl"
+                    >3759 Watkins Rd, Millport, NY 14864</span
+                  >
+                  <span class="font-barlow text-black-light text-xs md:text-sm"
+                    >No owner financing available</span
+                  >
+                  <div class="flex mb-6 md:mb-0 mt-3 md:mt-auto">
+                    <div class="flex flex-col">
+                      <div class="flex mb-2">
+                        <img src="/img/hotel-bed-1.svg" />
+                        <span class="font-medium text-black-light text-xl ml-2"
+                          >2</span
+                        >
+                      </div>
+                      <span class="text-xs text-black-light">BEDROOMS</span>
+                    </div>
+                    <div class="flex flex-col mx-8">
+                      <div class="flex mb-2">
+                        <img src="/img/hotel-bath-shower.svg" />
+                        <span class="font-medium text-black-light text-xl ml-2"
+                          >2</span
+                        >
+                      </div>
+                      <span class="text-xs text-black-light">BATHROOMS</span>
+                    </div>
+                    <div class="flex flex-col">
+                      <div class="flex mb-2">
+                        <img src="/img/expand-1.svg" />
+                        <span class="font-medium text-black-light text-xl ml-2"
+                          >1,793</span
+                        >
+                      </div>
+                      <span class="text-xs text-black-light"
+                        >SIZE (SQ.FT.)</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="flex items-end">
+                  <button
+                    class="
+                      text-white
+                      font-barlow font-semibold
+                      uppercase
+                      text-sm
+                      bg-blue-dark
+                      max-w-[130px]
+                      w-[130px]
+                      h-12
+                      py-4
+                      rounded
+                    "
+                  >
+                    Make an offer
+                  </button>
+                  <button
+                    class="
+                      text-white
+                      font-barlow font-semibold
+                      uppercase
+                      text-sm
+                      bg-[#F3AC1A]
+                      max-w-[138px]
+                      w-[138px]
+                      h-12
+                      py-4
+                      rounded
+                      ml-3
+                      flex flex-nowrap
+                      justify-center
+                      align-middle
+                      items-center
+                    "
+                  >
+                    More Info
+                    <img src="/img/right-arrow.svg" class="ml-2" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="
+              flex flex-col
+              w-full
+              max-w-[940px]
+              justify-center
+              shadow-lg
+              mb-2
+            "
+          >
+            <div
+              class="flex md:flex-row flex-col bg-white md:h-60 justify-start"
+            >
+              <div class="flex relative">
+                <img
+                  src="/img/card-01.png"
+                  class="
+                    max-h-[240px]
+                    w-full
+                    h-auto
+                    object-cover
+                    md:max-w-[240px]
+                  "
+                />
+              </div>
+              <div
+                class="
+                  flex flex-col
+                  md:flex-row md:px-8
+                  px-3
+                  py-6
+                  flex-1
+                  justify-between
+                "
+              >
+                <div class="flex flex-col">
+                  <span class="font-Barlow text-xs">CASH PRICE</span>
+                  <span
+                    class="
+                      text-black-light
+                      font-medium
+                      text-2xl
+                      md:text-4xl
+                      mb-2
+                    "
+                    >$32,900</span
+                  >
+                  <span class="font-lora text-black-light text-xs md:text-xl"
+                    >3759 Watkins Rd, Millport, NY 14864</span
+                  >
+                  <span class="font-barlow text-black-light text-xs md:text-sm"
+                    >No owner financing available</span
+                  >
+                  <div class="flex mb-6 md:mb-0 mt-3 md:mt-auto">
+                    <div class="flex flex-col">
+                      <div class="flex mb-2">
+                        <img src="/img/hotel-bed-1.svg" />
+                        <span class="font-medium text-black-light text-xl ml-2"
+                          >2</span
+                        >
+                      </div>
+                      <span class="text-xs text-black-light">BEDROOMS</span>
+                    </div>
+                    <div class="flex flex-col mx-8">
+                      <div class="flex mb-2">
+                        <img src="/img/hotel-bath-shower.svg" />
+                        <span class="font-medium text-black-light text-xl ml-2"
+                          >2</span
+                        >
+                      </div>
+                      <span class="text-xs text-black-light">BATHROOMS</span>
+                    </div>
+                    <div class="flex flex-col">
+                      <div class="flex mb-2">
+                        <img src="/img/expand-1.svg" />
+                        <span class="font-medium text-black-light text-xl ml-2"
+                          >1,793</span
+                        >
+                      </div>
+                      <span class="text-xs text-black-light"
+                        >SIZE (SQ.FT.)</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="flex items-end">
+                  <button
+                    class="
+                      text-white
+                      font-barlow font-semibold
+                      uppercase
+                      text-sm
+                      bg-blue-dark
+                      max-w-[130px]
+                      w-[130px]
+                      h-12
+                      py-4
+                      rounded
+                    "
+                  >
+                    Make an offer
+                  </button>
+                  <button
+                    class="
+                      text-white
+                      font-barlow font-semibold
+                      uppercase
+                      text-sm
+                      bg-[#F3AC1A]
+                      max-w-[138px]
+                      w-[138px]
+                      h-12
+                      py-4
+                      rounded
+                      ml-3
+                      flex flex-nowrap
+                      justify-center
+                      align-middle
+                      items-center
+                    "
+                  >
+                    More Info
+                    <img src="/img/right-arrow.svg" class="ml-2" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- pagination -->
+          <div class="flex items-center space-x-1 mt-14">
+            <a href="#" class="flex items-center px-4 py-2 text-blue-dark">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M11 17l-5-5m0 0l5-5m-5 5h12"
+                />
+              </svg>
+            </a>
+
+            <a
+              href="#"
+              class="
+                px-5
+                py-2
+                text-black-light text-sm
+                hover:bg-white hover:text-blue-dark
+                focus:bg-white focus:text-black-dark
+              "
+            >
+              1
+            </a>
+            <a
+              href="#"
+              class="
+                px-5
+                py-2
+                text-sm text-black-light
+                hover:bg-white hover:text-blue-dark
+                focus:bg-white focus:text-black-dark
+              "
+            >
+              2
+            </a>
+
+            <a
+              href="#"
+              class="
+                px-5
+                py-2
+                text-sm text-black-light
+                hover:bg-white hover:text-blue-dark
+                focus:bg-white focus:text-black-dark
+              "
+            >
+              ...
+            </a>
+            <a
+              href="#"
+              class="
+                px-5
+                py-2
+                text-sm text-black-light
+                hover:bg-white hover:text-blue-dark
+                focus:bg-white focus:text-black-dark
+              "
+            >
+              12
+            </a>
+            <a
+              href="#"
+              class="
+                px-5
+                py-2
+                text-sm text-blue-dark
+                hover:bg-blue-400 hover:text-white
+              "
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M13 7l5 5m0 0l-5 5m5-5H6"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- footer -->
+      <footer class="w-full h-full bg-gray-light">
+        <div class="flex flex-col max-w-[940px] w-full mx-auto py-11">
+          <div class="flex flex-col mb-5">
+            <h5 class="text-sm font-barlow text-black-light ml-4 md:ml-0 mb-7">
+              Top U.S. Foreclosure Areas:
+            </h5>
+            <div
+              class="
+                flex
+                md:flex-nowrap
+                flex-wrap
+                justify-center
+                md:justify-between
+              "
+            >
+              <ul class="w-50% mr-2 mb-3">
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+              </ul>
+              <ul class="w-50% mr-2 mb-3">
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+              </ul>
+              <ul class="w-50% mr-2 mb-3">
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+              </ul>
+              <ul class="w-50% mr-2 mb-3">
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+              </ul>
+              <ul class="w-50% mr-2 mb-3">
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+              </ul>
+              <ul class="w-50% mr-2 mb-3">
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex flex-col mb-5">
+            <h5 class="text-sm font-barlow text-black-light ml-4 md:ml-0 mb-7">
+              Top U.S. Foreclosure Areas:
+            </h5>
+            <div
+              class="
+                flex
+                md:flex-nowrap
+                flex-wrap
+                justify-center
+                md:justify-between
+              "
+            >
+              <ul class="w-50% mr-2 mb-3">
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+              </ul>
+              <ul class="w-50% mr-2 mb-3">
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+              </ul>
+              <ul class="w-50% mr-2 mb-3">
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+              </ul>
+              <ul class="w-50% mr-2 mb-3">
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+              </ul>
+              <ul class="w-50% mr-2 mb-3">
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+              </ul>
+              <ul class="w-50% mr-2 mb-3">
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- bottom footer -->
+        <div class="flex justify-between bg-gray-dark">
+          <div
+            class="
+              flex flex-col
+              md:flex-row
+              max-w-[940px]
+              w-full
+              justify-between
+              mx-auto
+              py-11
+              px-4
+              md:px-0
+            "
+          >
+            <div class="flex flex-col">
+              <div class="flex align-middle mb-5">
+                <img src="/img/Logo-gray.svg" alt="logo" class="mr-2" />
+                <p class="font-lora text-sm text-gray-600">
+                  CastleRock
+                  <span class="font-barlow text-xs text-gray-600">REO</span>
+                </p>
+              </div>
+              <p class="text-xs font-barlow">
+                CastleRock REO 333 Westchester Avenue West Building Suite 2100
+                White Plains, NY 10604 Sales: 914-372-7510 © <br />2017
+                CastleRock REO LLC. All Rights Reserved.
+              </p>
+            </div>
+            <div class="flex mt-5 md:mt-0 md:items-end">
+              <a href="#" class="text-black text-xs">Privacy policy</a>
+              <a href="#" class="text-black text-xs ml-3">FAQ</a>
+              <a href="#" class="text-black text-xs ml-3">Contact us</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script type="text/javascript" src="./custom.js"></script>
+  </body>
+</html>

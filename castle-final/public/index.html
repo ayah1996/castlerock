@@ -1,0 +1,1228 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>castlerock</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&family=Lora&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Container for the page -->
+    <div class="flex flex-col justify-center items-center">
+      <!-- Navbar -->
+      <nav class="bg-white w-full md:max-w-[940px]">
+        <div class="mx-auto px-4 md:px-0">
+          <div class="flex justify-between h-16 border-b">
+            <div class="flex">
+              <div class="flex-shrink-0 flex items-center">
+                <img
+                  class="block lg:hidden h-8 w-auto"
+                  src="/img/Logo.svg"
+                  alt="CastleRock"
+                />
+                <img
+                  class="hidden lg:block h-10 w-auto"
+                  src="/img/Logo.svg"
+                  alt="CastleRock"
+                />
+              </div>
+              <div class="hidden md:ml-6 md:flex md:items-center">
+                <a
+                  href="index.html"
+                  class="
+                    text-blue-dark
+                    hover:text-blue-dark
+                    px-2
+                    py-2
+                    rounded-md
+                    text-sm
+                    font-medium
+                  "
+                  aria-current="page"
+                  >Home</a
+                >
+
+                <a
+                  href="#"
+                  class="
+                    hover:text-blue-dark
+                    px-3
+                    py-2
+                    rounded-md
+                    text-sm
+                    font-medium
+                  "
+                  >Owner financing</a
+                >
+
+                <a
+                  href="how-it-work.html"
+                  class="
+                    hover:text-blue-dark
+                    px-3
+                    py-2
+                    rounded-md
+                    text-sm
+                    font-medium
+                  "
+                  >How it works</a
+                >
+
+                <a
+                  href="about-us.html"
+                  class="
+                    hover:text-blue-dark
+                    px-3
+                    py-2
+                    rounded-md
+                    text-sm
+                    font-medium
+                  "
+                  >About Us</a
+                >
+
+                <a
+                  href="team.html"
+                  class="
+                    hover:text-blue-dark
+                    px-3
+                    py-2
+                    rounded-md
+                    text-sm
+                    font-medium
+                  "
+                  >Our Team</a
+                >
+                <a
+                  href="#"
+                  class="
+                    hover:text-blue-dark
+                    px-3
+                    py-2
+                    rounded-md
+                    text-sm
+                    font-medium
+                  "
+                  >Contact Us</a
+                >
+              </div>
+              <div class="ml-4 mr-2 flex items-center md:hidden">
+                <!-- Mobile menu button -->
+                <button
+                  id="toggleBtn"
+                  type="button"
+                  class="
+                    inline-flex
+                    items-center
+                    justify-center
+                    p-2
+                    rounded-md
+                    text-gray-400
+                    hover:text-blue-dark
+                    focus:outline-none
+                    focus:ring-2
+                    focus:ring-inset
+                    focus:ring-white
+                  "
+                  aria-controls="mobile-menu"
+                  aria-expanded="false"
+                >
+                  <span class="sr-only">Open main menu</span>
+
+                  <svg
+                    id="outlineMenu"
+                    class="block h-6 w-6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
+                  </svg>
+
+                  <svg
+                    id="outlineX"
+                    class="hidden h-6 w-6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="flex items-center">
+              <div class="flex-shrink-0">
+                <button
+                  type="button"
+                  class="
+                    relative
+                    inline-flex
+                    items-center
+                    px-4
+                    py-2
+                    border border-transparent
+                    shadow-sm
+                    text-sm
+                    font-medium
+                    rounded-md
+                    text-white
+                    bg-blue-dark
+                    hover:bg-blue-dark
+                    focus:outline-none
+                    focus:ring-2
+                    focus:ring-offset-2
+                    focus:ring-offset-gray-800
+                    focus:ring-blue-dark
+                  "
+                >
+                  <span class="uppercase">make an offer</span>
+                </button>
+                <a
+                  href="#"
+                  class="
+                    text-[#1E91D6]
+                    hover:bg-gray-700 hover:text-white
+                    px-3
+                    py-2
+                    rounded-md
+                    text-sm
+                    font-medium
+                    hidden
+                    md:inline-block
+                  "
+                  >Sign In
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hidden md:hidden" id="mobile-menu">
+          <div class="text-center px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <a
+              href="#"
+              class="
+                font-barlow
+                block
+                py-4
+                border-b
+                rounded-md
+                text-xs
+                font-medium
+              "
+              aria-current="page"
+              >Home</a
+            >
+
+            <a
+              href="#"
+              class="
+                font-barlow
+                hover:text-blue-dark
+                block
+                py-4
+                border-b
+                rounded-md
+                text-xs
+                font-medium
+              "
+              >Owner Financing</a
+            >
+
+            <a
+              href="#"
+              class="
+                font-barlow
+                hover:text-blue-dark
+                block
+                py-4
+                border-b
+                rounded-md
+                text-xs
+                font-medium
+              "
+              >How it works</a
+            >
+
+            <a
+              href="#"
+              class="
+                font-barlow
+                hover:text-blue-dark
+                block
+                py-4
+                border-b
+                rounded-md
+                text-xs
+                font-medium
+              "
+              >About Us</a
+            >
+            <a
+              href="#"
+              class="
+                font-barlow
+                hover:text-blue-dark
+                block
+                py-4
+                border-b
+                rounded-md
+                text-xs
+                font-medium
+              "
+              >Our Team
+            </a>
+            <a
+              href="#"
+              class="
+                font-barlow
+                hover:text-blue-dark
+                block
+                py-4
+                border-b
+                rounded-md
+                text-xs
+                font-medium
+              "
+              >Contact Us</a
+            >
+            <a
+              href="#"
+              class="
+                text-[#1E91D6]
+                hover:text-blue-dark
+                font-barlow
+                block
+                py-4
+                rounded-md
+                text-xs
+                font-medium
+              "
+              >Sign In</a
+            >
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <section
+        class="
+          md:h-[816px]
+          h-auto
+          mb-2
+          flex
+          justify-center
+          items-center
+          bg-cover
+          w-full
+          bg-black-dark
+          relative
+          md-mt-0
+        "
+        style="background-image: url(/img/hero.png)"
+      >
+        <div class="z-10 px-2 md:px-0">
+          <h1
+            class="text-3xl md:text-4xl text-center text-white font-lora my-9"
+          >
+            Find Your next investment property <br />
+            or affordable fixer-upper
+          </h1>
+          <!-- Search box -->
+          <div
+            class="
+              flex
+              md:flex-row
+              flex-col
+              md:mx-auto
+              justify-between
+              items-center
+              bg-white
+              md:mb-48
+              mb-8
+              max-w-[620px]
+              w-full
+              rounded
+            "
+          >
+            <input
+              type="text"
+              class="h-16 pl-10 pr-20 z-0 focus:shadow focus:outline-none"
+              placeholder="Enter an address ..."
+            />
+            <button
+              class="
+                h-16
+                w-full
+                md:w-32
+                uppercase
+                text-white
+                bg-yellow-400
+                hover:bg-yellow-600
+                rounded-b
+                md:rounded-b-none
+              "
+            >
+              Search
+            </button>
+          </div>
+          <!-- how it work section -->
+
+          <div
+            class="
+              md:mx-auto
+              bg-white
+              max-w-[1024px]
+              w-full
+              md:h-96
+              h-auto
+              md-px-32
+              py-11
+              flex flex-col
+              justify-start
+              items-center
+              rounded-sm
+              shadow-xl
+              -mb-28
+            "
+          >
+            <h2
+              class="text-black text-2xl md:text-3xl font-lora mb-7 text-center"
+            >
+              Learn how it works
+            </h2>
+            <div
+              class="
+                flex flex-col
+                md:flex-row md:justify-center md:items-between
+              "
+            >
+              <div
+                class="
+                  flex flex-col
+                  md:h-40
+                  mb-6
+                  md:mb-0 md:w-56
+                  w-full
+                  justify-center
+                  items-center
+                  text-center
+                "
+              >
+                <div class="flex min-h-full">
+                  <img
+                    src="/img/feature-one.svg"
+                    width="87px"
+                    height="87px"
+                    alt="feature"
+                  />
+                </div>
+
+                <h3 class="mt-4">
+                  Search our <br />
+                  available homes
+                </h3>
+              </div>
+              <img
+                src="/img/Separator 2.svg"
+                class="self-center hidden md:inline-block mb-10"
+              />
+              <div
+                class="
+                  flex flex-col
+                  md:h-40
+                  mb-6
+                  md:mb-0 md:w-56
+                  w-full
+                  justify-center
+                  items-center
+                  text-center
+                "
+              >
+                <div class="flex min-h-full">
+                  <img
+                    src="/img/feature-two.svg"
+                    width="72px"
+                    height="72px"
+                    alt="feature"
+                  />
+                </div>
+                <h3 class="mt-4">
+                  Search our <br />
+                  available homes
+                </h3>
+              </div>
+              <img
+                src="/img/Separator 2.svg"
+                class="self-center hidden md:inline-block mb-10"
+              />
+
+              <div
+                class="
+                  flex flex-col
+                  md:h-40
+                  mb-6
+                  md:mb-0 md:w-56
+                  w-full
+                  justify-center
+                  items-center
+                  text-center
+                "
+              >
+                <div class="flex min-h-full">
+                  <img
+                    src="/img/feature-three.svg"
+                    width="88px"
+                    height="88px"
+                    alt="feature"
+                  />
+                </div>
+                <h3 class="mt-4">
+                  Search our <br />
+                  available homes
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="color-overlay w-full h-full absolute bg-black-light opacity-70"
+        ></div>
+      </section>
+
+      <!-- Foreclosed home Section -->
+
+      <div class="flex flex-col max-w-[1100px] mt-[170px] md:mt-28">
+        <div class="flex flex-col md:flex-row mb-14 justify-center">
+          <h2
+            class="
+              text-black-light text-center
+              font-lora
+              text-2xl
+              md:text-4xl
+              mr-2
+            "
+          >
+            Foreclosed homes in
+          </h2>
+          <div class="flex flex-nowrapa justify-center items-center">
+            <span class="text-blue-dark text-4xl font-lora"> Arizona </span>
+            <svg
+              class="fill-current text-blue-dark h-4 w-4 mt-2"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <div
+          class="
+            flex flex-col
+            md:flex-row md:mb-10
+            items-center
+            md:justify-between
+          "
+        >
+          <div
+            class="
+              card
+              flex flex-col
+              rounded
+              shadow-lg
+              mb-10
+              md:mb-0
+              max-w-[300px]
+            "
+          >
+            <img
+              src="/img/card-01.png"
+              class="w-full align-top mb-4"
+              alt="card"
+            />
+            <div class="flex flex-col pb-4 px-4">
+              <div class="flex justify-between items-center">
+                <div class="flex flex-col">
+                  <h5 class="font-lora text-sm text-black-light">
+                    3759 Watkins Rd, Millport, <br />NY 14864
+                  </h5>
+                  <h6 class="font-barlow text-xs text-black-light">
+                    No owner financing available
+                  </h6>
+                </div>
+                <div class="flex flex-col self-start">
+                  <h5 class="font-bold font-barlow text-[#8fc93a] text-xl">
+                    $32,900
+                  </h5>
+                  <h6 class="font-barlow text-xs text-black-light text-left">
+                    CASH PRICE
+                  </h6>
+                </div>
+              </div>
+              <hr class="my-6" />
+              <div class="flex justify-start">
+                <div class="flex flex-col">
+                  <span
+                    class="
+                      font-barlow
+                      text-xl
+                      font-medium
+                      text-black-light
+                      leading-normal
+                    "
+                    >2</span
+                  >
+                  <span class="font-barlow text-xs text-black-light"
+                    >BEDROOMS</span
+                  >
+                </div>
+                <div class="flex flex-col">
+                  <span
+                    class="
+                      font-barlow
+                      text-xl
+                      font-medium
+                      text-black-light
+                      leading-normal
+                    "
+                    >1</span
+                  >
+                  <span class="font-barlow text-xs text-black-light"
+                    >BATHROOMS</span
+                  >
+                </div>
+                <div class="flex flex-col">
+                  <span
+                    class="
+                      font-barlow
+                      text-xl
+                      font-medium
+                      text-black-light
+                      leading-normal
+                    "
+                    >1041</span
+                  >
+                  <span class="font-barlow text-xs text-black-light"
+                    >SIZE (SQ.FT.)</span
+                  >
+                </div>
+              </div>
+              <button
+                class="
+                  w-full
+                  uppercase
+                  bg-blue-dark
+                  text-white
+                  py-4
+                  rounded
+                  mt-6
+                "
+              >
+                View listing
+              </button>
+            </div>
+          </div>
+          <div
+            class="
+              card
+              flex flex-col
+              rounded
+              shadow-lg
+              mb-10
+              md:mb-0
+              max-w-[300px]
+              md:mx-5
+            "
+          >
+            <img
+              src="/img/card-02.png"
+              class="w-full align-top mb-4"
+              alt="card"
+            />
+            <div class="flex flex-col pb-4 px-4">
+              <div class="flex justify-between items-center">
+                <div class="flex flex-col">
+                  <h5 class="font-lora text-sm text-black-light">
+                    3759 Watkins Rd, Millport, <br />NY 14864
+                  </h5>
+                  <h6 class="font-barlow text-xs text-black-light">
+                    No owner financing available
+                  </h6>
+                </div>
+                <div class="flex flex-col self-start">
+                  <h5 class="font-bold font-barlow text-[#8fc93a] text-xl">
+                    $32,900
+                  </h5>
+                  <h6 class="font-barlow text-xs text-black-light text-left">
+                    CASH PRICE
+                  </h6>
+                </div>
+              </div>
+              <hr class="my-6" />
+              <div class="flex justify-start">
+                <div class="flex flex-col">
+                  <span
+                    class="
+                      font-barlow
+                      text-xl
+                      font-medium
+                      text-black-light
+                      leading-normal
+                    "
+                    >2</span
+                  >
+                  <span class="font-barlow text-xs text-black-light"
+                    >BEDROOMS</span
+                  >
+                </div>
+                <div class="flex flex-col">
+                  <span
+                    class="
+                      font-barlow
+                      text-xl
+                      font-medium
+                      text-black-light
+                      leading-normal
+                    "
+                    >1</span
+                  >
+                  <span class="font-barlow text-xs text-black-light"
+                    >BATHROOMS</span
+                  >
+                </div>
+                <div class="flex flex-col">
+                  <span
+                    class="
+                      font-barlow
+                      text-xl
+                      font-medium
+                      text-black-light
+                      leading-normal
+                    "
+                    >1041</span
+                  >
+                  <span class="font-barlow text-xs text-black-light"
+                    >SIZE (SQ.FT.)</span
+                  >
+                </div>
+              </div>
+              <button
+                class="
+                  w-full
+                  uppercase
+                  bg-blue-dark
+                  text-white
+                  py-4
+                  rounded
+                  mt-6
+                "
+              >
+                View listing
+              </button>
+            </div>
+          </div>
+          <div
+            class="
+              card
+              flex flex-col
+              rounded
+              shadow-lg
+              mb-10
+              md:mb-0
+              max-w-[300px]
+            "
+          >
+            <img
+              src="/img/card-03.png"
+              class="w-full align-top mb-4"
+              alt="card"
+            />
+            <div class="flex flex-col pb-4 px-4">
+              <div class="flex justify-between items-center">
+                <div class="flex flex-col">
+                  <h5 class="font-lora text-sm text-black-light">
+                    3759 Watkins Rd, Millport, <br />NY 14864
+                  </h5>
+                  <h6 class="font-barlow text-xs text-black-light">
+                    No owner financing available
+                  </h6>
+                </div>
+                <div class="flex flex-col self-start">
+                  <h5 class="font-bold font-barlow text-[#8fc93a] text-xl">
+                    $32,900
+                  </h5>
+                  <h6 class="font-barlow text-xs text-black-light text-left">
+                    CASH PRICE
+                  </h6>
+                </div>
+              </div>
+              <hr class="my-6" />
+              <div class="flex justify-start">
+                <div class="flex flex-col">
+                  <span
+                    class="
+                      font-barlow
+                      text-xl
+                      font-medium
+                      text-black-light
+                      leading-normal
+                    "
+                    >2</span
+                  >
+                  <span class="font-barlow text-xs text-black-light"
+                    >BEDROOMS</span
+                  >
+                </div>
+                <div class="flex flex-col">
+                  <span
+                    class="
+                      font-barlow
+                      text-xl
+                      font-medium
+                      text-black-light
+                      leading-normal
+                    "
+                    >1</span
+                  >
+                  <span class="font-barlow text-xs text-black-light"
+                    >BATHROOMS</span
+                  >
+                </div>
+                <div class="flex flex-col">
+                  <span
+                    class="
+                      font-barlow
+                      text-xl
+                      font-medium
+                      text-black-light
+                      leading-normal
+                    "
+                    >1041</span
+                  >
+                  <span class="font-barlow text-xs text-black-light"
+                    >SIZE (SQ.FT.)</span
+                  >
+                </div>
+              </div>
+              <button
+                class="
+                  w-full
+                  uppercase
+                  bg-blue-dark
+                  text-white
+                  py-4
+                  rounded
+                  mt-6
+                "
+              >
+                View listing
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- </div> -->
+        <!-- </div> -->
+
+        <!--   end  the  deiv   -->
+      </div>
+
+      <!-- How are section -->
+
+      <section
+        class="
+          min-h-[780px]
+          h-full
+          flex
+          justify-center
+          items-center
+          bg-center bg-no-repeat
+          w-full
+          bg-blue-dark
+          relative
+          mt-[300px]
+        "
+        style="background-image: url(/img/who-are.png)"
+      >
+        <div
+          class="
+            max-w-[940px]
+            min-h-[410px]
+            mb-2
+            flex
+            justify-center
+            items-center
+            bg-cover
+            md:w-full
+            w-[95%]
+            bg-black-dark
+            absolute
+            -top-24
+            mx-auto
+            rounded
+            -mt-[120px]
+          "
+          style="background-image: url(/img/sign-up.png); margin-top: -120px"
+        >
+          <div class="z-10 text-center mt-12">
+            <h4
+              class="text-white font-lora text-2xl md:text-3xl text-center mb-9"
+            >
+              Sign Up for a free account to get alerts on <br />
+              foreclosures in your area
+            </h4>
+            <button
+              class="
+                h-12
+                md:w-[272px]
+                w-[125px]
+                uppercase
+                text-white
+                bg-[#F3AC1A]
+                hover:bg-yellow-600
+              "
+            >
+              Get started
+            </button>
+          </div>
+
+          <div
+            class="
+              color-overlay
+              w-full
+              h-full
+              absolute
+              bg-black-light
+              opacity-70
+            "
+          ></div>
+        </div>
+
+        <div class="flex flex-col max-w-[780px] mx-auto text-center">
+          <h4 class="text-white font-lora text-3xl mb-10">Who we are</h4>
+          <p class="text-white mx-4 md:mx-0 text-lg">
+            CastleRock REO is one of the largest purchasers of distressed
+            foreclosed homes in the US, buying in excess of 10,000 homes over
+            the last few years. We buy previously foreclosed houses in bulk,
+            which allows us to sell our properties at a lower price than you’ll
+            find otherwise.
+          </p>
+        </div>
+        <div
+          class="color-overlay w-full h-full absolute bg-blue-darl opacity-70"
+        ></div>
+      </section>
+
+      <!-- footer -->
+      <footer class="w-full h-full bg-gray-light">
+        <div class="flex flex-col max-w-[940px] w-full mx-auto py-11">
+          <div class="flex flex-col mb-5">
+            <h5 class="text-sm font-barlow text-black-light ml-4 md:ml-0 mb-7">
+              Top U.S. Foreclosure Areas:
+            </h5>
+            <div
+              class="
+                flex
+                md:flex-nowrap
+                flex-wrap
+                justify-center
+                md:justify-between
+              "
+            >
+              <ul class="w-50% mr-2 mb-3">
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+              </ul>
+              <ul class="w-50% mr-2 mb-3">
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+              </ul>
+              <ul class="w-50% mr-2 mb-3">
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+              </ul>
+              <ul class="w-50% mr-2 mb-3">
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+              </ul>
+              <ul class="w-50% mr-2 mb-3">
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+              </ul>
+              <ul class="w-50% mr-2 mb-3">
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex flex-col mb-5">
+            <h5 class="text-sm font-barlow text-black-light ml-4 md:ml-0 mb-7">
+              Top U.S. Foreclosure Areas:
+            </h5>
+            <div
+              class="
+                flex
+                md:flex-nowrap
+                flex-wrap
+                justify-center
+                md:justify-between
+              "
+            >
+              <ul class="w-50% mr-2 mb-3">
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+              </ul>
+              <ul class="w-50% mr-2 mb-3">
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+              </ul>
+              <ul class="w-50% mr-2 mb-3">
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+              </ul>
+              <ul class="w-50% mr-2 mb-3">
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+              </ul>
+              <ul class="w-50% mr-2 mb-3">
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+              </ul>
+              <ul class="w-50% mr-2 mb-3">
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- bottom footer -->
+        <div class="flex justify-between bg-gray-dark">
+          <div
+            class="
+              flex flex-col
+              md:flex-row
+              max-w-[940px]
+              w-full
+              justify-between
+              mx-auto
+              py-11
+              px-4
+              md:px-0
+            "
+          >
+            <div class="flex flex-col">
+              <div class="flex align-middle mb-5">
+                <img src="/img/Logo-gray.svg" alt="logo" class="mr-2" />
+                <p class="font-lora text-sm text-gray-600">
+                  CastleRock
+                  <span class="font-barlow text-xs text-gray-600">REO</span>
+                </p>
+              </div>
+              <p class="text-xs text-bluedark font-barlow">
+                CastleRock REO 333 Westchester Avenue West Building Suite 2100
+                White Plains, NY 10604 Sales: 914-372-7510 © <br />2017
+                CastleRock REO LLC. All Rights Reserved.
+              </p>
+            </div>
+            <div class="flex mt-5 md:mt-0 md:items-end">
+              <a href="#" class="text-black text-xs">Privacy policy</a>
+              <a href="#" class="text-black text-xs ml-3">FAQ</a>
+              <a href="#" class="text-black text-xs ml-3">Contact us</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <script type="text/javascript" src="./custom.js"></script>
+  </body>
+</html>

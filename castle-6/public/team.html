@@ -1,0 +1,1370 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>castlerock</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&family=Lora&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Container for the page -->
+    <div class="flex flex-col justify-center items-center">
+      <!-- Nav -->
+      <nav class="max-w-[940px] w-full bg-white py-2 md:py-4">
+        <div class="px-4 mx-auto md:flex md:items-center">
+          <div class="flex justify-between md:items-center">
+            <a href="#"><img src="/img/Logo.svg" /></a>
+            <button
+              class="
+                border border-solid border-gray-600
+                px-3
+                py-1
+                rounded
+                text-gray-600
+                opacity-50
+                hover:opacity-75
+                md:hidden
+              "
+              id="navbar-toggle"
+            >
+              <img src="/img/menu.svg" class="w-[20px] h-[20px]" />
+            </button>
+          </div>
+
+          <div
+            class="
+              hidden
+              md:flex
+              flex-col
+              md:flex-row md:mr-auto
+              lg:mr-0
+              mt-3
+              md:mt-0
+              text-center
+            "
+            id="navbar-collapse"
+          >
+            <a
+              href="#"
+              class="
+                p-2
+                lg:px-3
+                md:mx-2
+                text-black-dark text-xs
+                font-barlow
+                border-
+                md:border-b-0
+                border-b
+              "
+              >Home</a
+            >
+            <a
+              href="#"
+              class="
+                p-2
+                lg:px-1
+                md:mx-2
+                text-black-dark text-xs
+                font-barlow
+                border-
+                md:border-b-0
+                border-b
+              "
+              >Owner Financing</a
+            >
+            <a
+              href="#"
+              class="
+                p-2
+                lg:px-1
+                md:mx-2
+                text-black-dark text-xs
+                font-barlow
+                border-
+                md:border-b-0
+                border-b
+              "
+              >How it works</a
+            >
+            <a
+              href="#"
+              class="
+                p-2
+                lg:px-1
+                md:mx-2
+                text-black-dark text-xs
+                font-barlow
+                border-
+                md:border-b-0
+                border-b
+              "
+              >About Us</a
+            >
+            <a
+              href="#"
+              class="
+                p-2
+                lg:px-1
+                md:mx-2
+                text-black-dark text-xs
+                font-barlow
+                border-
+                md:border-b-0
+                border-b
+              "
+              >Our Team</a
+            >
+            <a
+              href="#"
+              class="
+                p-2
+                lg:px-1
+                md:mx-2
+                text-black-dark text-xs
+                font-barlow
+                border-
+              "
+              >Contact Us</a
+            >
+            <div class="flex flex-col md:flex-row">
+              <a
+                href="#"
+                class="
+                  p-2
+                  lg:px-4
+                  md:mx-2
+                  text-White text-center text-xs
+                  border border-solid border-indigo-600
+                  rounded
+                  bg-blue-dark
+                  hover:bg-blue-dark hover:text-white
+                  transition-colors
+                  duration-300
+                  mt-1
+                  md:mt-0
+                "
+                >MAKE AN OFFER</a
+              >
+              <a
+                href="#"
+                class="
+                  p-2
+                  lg:px-4
+                  md:mx-2
+                  text-blue-light text-center
+                  border border-transparent
+                  rounded
+                  hover:bg-blue-dark hover:text-blue-dark
+                  transition-colors
+                  duration-300
+                "
+                >Sign in
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Team  -->
+      <section
+        class="max-w-[780px] w-full flex flex-col py-16 px-2 md:px-0 border-b"
+      >
+        <!-- Sales Associates -->
+        <div class="flex flex-col mb-11">
+          <h2 class="font-lora md:text-[44px] text-[32px] mb-10 text-center">
+            Sales Associates
+          </h2>
+          <div
+            class="
+              flex
+              justify-center
+              md:justify-between
+              items-center
+              flex-row flex-wrap
+            "
+          >
+            <!-- Person details -->
+
+            <div
+              class="
+                flex flex-col
+                w-1/2
+                md:w-[18%]
+                justify-between
+                items-center
+                mb-6
+              "
+            >
+              <img src="/img/team01.png" class="max-w-[134px]" />
+              <h3 class="font-lora text-black-light text-sm mt-[14px] mb-1">
+                Loni Bowcher
+              </h3>
+              <h5 class="font-barlow text-black-light text-sm">
+                (914) 281-2106
+              </h5>
+            </div>
+            <div
+              class="
+                flex flex-col
+                w-1/2
+                md:w-[18%]
+                justify-between
+                items-center
+                mb-6
+              "
+            >
+              <img src="/img/team02.png" class="max-w-[134px]" />
+              <h3 class="font-lora text-black-light text-sm mt-[14px] mb-1">
+                Andries Grootoonk
+              </h3>
+              <h5 class="font-barlow text-black-light text-sm">
+                (914) 281-2106
+              </h5>
+            </div>
+            <div
+              class="
+                flex flex-col
+                w-1/2
+                md:w-[18%]
+                justify-between
+                items-center
+                mb-6
+              "
+            >
+              <img src="/img/team03.png" class="max-w-[134px]" />
+              <h3 class="font-lora text-black-light text-sm mt-[14px] mb-1">
+                Ekaterina Tankova
+              </h3>
+              <h5 class="font-barlow text-black-light text-sm">
+                (914) 281-2106
+              </h5>
+            </div>
+            <div
+              class="
+                flex flex-col
+                w-1/2
+                md:w-[18%]
+                justify-between
+                items-center
+                mb-6
+              "
+            >
+              <img src="/img/team04.png" class="max-w-[134px]" />
+              <h3 class="font-lora text-black-light text-sm mt-[14px] mb-1">
+                Marleah Eagleston
+              </h3>
+              <h5 class="font-barlow text-black-light text-sm">
+                (914) 281-2106
+              </h5>
+            </div>
+            <div
+              class="
+                flex flex-col
+                w-1/2
+                md:w-[18%]
+                justify-between
+                items-center
+                mb-6
+              "
+            >
+              <img src="/img/team05.png" class="max-w-[134px]" />
+              <h3 class="font-lora text-black-light text-sm mt-[14px] mb-1">
+                Salma Fonseca
+              </h3>
+              <h5 class="font-barlow text-black-light text-sm">
+                (914) 281-2106
+              </h5>
+            </div>
+            <div
+              class="
+                flex flex-col
+                w-1/2
+                md:w-[18%]
+                justify-between
+                items-center
+                mb-6
+              "
+            >
+              <img src="/img/team06.png" class="max-w-[134px]" />
+              <h3 class="font-lora text-black-light text-sm mt-[14px] mb-1">
+                Loni Bowcher
+              </h3>
+              <h5 class="font-barlow text-black-light text-sm">
+                (914) 281-2106
+              </h5>
+            </div>
+            <div
+              class="
+                flex flex-col
+                w-1/2
+                md:w-[18%]
+                justify-between
+                items-center
+                mb-6
+              "
+            >
+              <img src="/img/team07.png" class="max-w-[134px]" />
+              <h3 class="font-lora text-black-light text-sm mt-[14px] mb-1">
+                Andries Grootoonk
+              </h3>
+              <h5 class="font-barlow text-black-light text-sm">
+                (914) 281-2106
+              </h5>
+            </div>
+            <div
+              class="
+                flex flex-col
+                w-1/2
+                md:w-[18%]
+                justify-between
+                items-center
+                mb-6
+              "
+            >
+              <img src="/img/team08.png" class="max-w-[134px]" />
+              <h3 class="font-lora text-black-light text-sm mt-[14px] mb-1">
+                Ekaterina Tankova
+              </h3>
+              <h5 class="font-barlow text-black-light text-sm">
+                (914) 281-2106
+              </h5>
+            </div>
+            <div
+              class="
+                flex flex-col
+                w-1/2
+                md:w-[18%]
+                justify-between
+                items-center
+                mb-6
+              "
+            >
+              <img src="/img/team09.png" class="max-w-[134px]" />
+              <h3 class="font-lora text-black-light text-sm mt-[14px] mb-1">
+                Marleah Eagleston
+              </h3>
+              <h5 class="font-barlow text-black-light text-sm">
+                (914) 281-2106
+              </h5>
+            </div>
+            <div
+              class="
+                flex flex-col
+                w-1/2
+                md:w-[18%]
+                justify-between
+                items-center
+                mb-6
+              "
+            >
+              <img src="/img/team10.png" class="max-w-[134px]" />
+              <h3 class="font-lora text-black-light text-sm mt-[14px] mb-1">
+                Salma Fonseca
+              </h3>
+              <h5 class="font-barlow text-black-light text-sm">
+                (914) 281-2106
+              </h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Acquisitions -->
+        <div class="flex flex-col mb-11">
+          <h2 class="font-lora md:text-[44px] text-[32px] mb-10 text-center">
+            Acquisitions
+          </h2>
+          <div
+            class="flex justify-center md:justify-between flex-row flex-wrap"
+          >
+            <!-- Person details -->
+
+            <div
+              class="
+                flex flex-col
+                w-1/2
+                md:w-[18%]
+                justify-start
+                text-center
+                mb-6
+                md:mb-0
+              "
+            >
+              <img src="/img/team11.png" class="max-w-[134px] min-h-[134px]" />
+              <h3 class="font-lora text-black-light text-sm mt-[14px]">
+                Emmalynn Mazzia
+              </h3>
+            </div>
+
+            <div
+              class="
+                flex flex-col
+                w-1/2
+                md:w-[18%]
+                justify-start
+                text-center
+                mb-6
+                md:mb-0
+              "
+            >
+              <img src="/img/team12.png" class="max-w-[134px] min-h-[134px]" />
+              <h3 class="font-lora text-black-light text-sm mt-[14px]">
+                Fukuyo Kazutoshi
+              </h3>
+            </div>
+            <div
+              class="
+                flex flex-col
+                w-1/2
+                md:w-[18%]
+                justify-start
+                text-center
+                mb-6
+                md:mb-0
+              "
+            >
+              <img src="/img/team13.png" class="max-w-[134px] min-h-[134px]" />
+              <h3 class="font-lora text-black-light text-sm mt-[14px]">
+                Juan Esteban Sarmiento
+              </h3>
+            </div>
+            <div
+              class="
+                flex flex-col
+                w-1/2
+                md:w-[18%]
+                justify-start
+                text-center
+                mb-6
+                md:mb-0
+              "
+            >
+              <img src="/img/team14.png" class="max-w-[134px] min-h-[134px]" />
+              <h3 class="font-lora text-black-light text-sm mt-[14px]">
+                Maria José Botín
+              </h3>
+            </div>
+            <div
+              class="
+                flex flex-col
+                w-1/2
+                md:w-[18%]
+                justify-start
+                text-center
+                mb-6
+                md:mb-0
+              "
+            >
+              <img src="/img/team15.png" class="max-w-[134px] min-h-[134px]" />
+              <h3 class="font-lora text-black-light text-sm mt-[14px]">
+                Sunstra Maneerattana
+              </h3>
+            </div>
+          </div>
+        </div>
+        <!-- Closings -->
+        <div class="flex flex-col mb-11">
+          <h2 class="font-lora text-[44px] mb-10 text-center">Closings</h2>
+          <div
+            class="flex justify-center md:justify-between flex-row flex-wrap"
+          >
+            <!-- Person details -->
+
+            <div
+              class="
+                flex flex-col
+                w-1/2
+                md:w-[18%]
+                justify-start
+                text-center
+                mb-6
+                md:mb-0
+              "
+            >
+              <img src="/img/team16.png" class="max-w-[134px] min-h-[134px]" />
+              <h3 class="font-lora text-black-light text-sm mt-[14px]">
+                Cardarion Hart
+              </h3>
+            </div>
+
+            <div
+              class="
+                flex flex-col
+                w-1/2
+                md:w-[18%]
+                justify-start
+                text-center
+                mb-6
+                md:mb-0
+              "
+            >
+              <img src="/img/team17.png" class="max-w-[134px] min-h-[134px]" />
+              <h3 class="font-lora text-black-light text-sm mt-[14px]">
+                Karl Kalagin
+              </h3>
+            </div>
+            <div
+              class="
+                flex flex-col
+                w-1/2
+                md:w-[18%]
+                justify-start
+                text-center
+                mb-6
+                md:mb-0
+              "
+            >
+              <img src="/img/team18.png" class="max-w-[134px] min-h-[134px]" />
+              <h3 class="font-lora text-black-light text-sm mt-[14px]">
+                Ohta Kin
+              </h3>
+            </div>
+            <div
+              class="
+                flex flex-col
+                w-1/2
+                md:w-[18%]
+                justify-start
+                text-center
+                mb-6
+                md:mb-0
+              "
+            >
+              <img src="/img/team19.png" class="max-w-[134px] min-h-[134px]" />
+              <h3 class="font-lora text-black-light text-sm mt-[14px]">
+                Rahul Malviya
+              </h3>
+            </div>
+            <div
+              class="
+                flex flex-col
+                w-1/2
+                md:w-[18%]
+                justify-start
+                text-center
+                mb-6
+                md:mb-0
+              "
+            >
+              <img src="/img/team20.png" class="max-w-[134px] min-h-[134px]" />
+              <h3 class="font-lora text-black-light text-sm mt-[14px]">
+                Sang Young-Il
+              </h3>
+            </div>
+          </div>
+        </div>
+        <!-- Marketing -->
+        <div class="flex flex-col mb-11">
+          <h2 class="font-lora md:text-[44px] text-[32px] mb-10 text-center">
+            Marketing
+          </h2>
+          <div
+            class="flex justify-center md:justify-between flex-row flex-wrap"
+          >
+            <!-- Person details -->
+
+            <div
+              class="
+                flex flex-col
+                w-1/2
+                md:w-[18%]
+                justify-start
+                text-center
+                mb-6
+                md:mb-0
+              "
+            >
+              <img src="/img/team21.png" class="max-w-[134px] min-h-[134px]" />
+              <h3 class="font-lora text-black-light text-sm mt-[14px]">
+                Darika Samak
+              </h3>
+            </div>
+
+            <div
+              class="
+                flex flex-col
+                w-1/2
+                md:w-[18%]
+                justify-start
+                text-center
+                mb-6
+                md:mb-0
+              "
+            >
+              <img src="/img/team22.png" class="max-w-[134px] min-h-[134px]" />
+              <h3 class="font-lora text-black-light text-sm mt-[14px]">
+                Jushawn McDowell
+              </h3>
+            </div>
+            <div
+              class="
+                flex flex-col
+                w-1/2
+                md:w-[18%]
+                justify-start
+                text-center
+                mb-6
+                md:mb-0
+              "
+            >
+              <img src="/img/team23.png" class="max-w-[134px] min-h-[134px]" />
+              <h3 class="font-lora text-black-light text-sm mt-[14px]">
+                Miglena Tadic
+              </h3>
+            </div>
+            <div
+              class="
+                flex flex-col
+                w-1/2
+                md:w-[18%]
+                justify-start
+                text-center
+                mb-6
+                md:mb-0
+              "
+            >
+              <img src="/img/team24.png" class="max-w-[134px] min-h-[134px]" />
+              <h3 class="font-lora text-black-light text-sm mt-[14px]">
+                Suhaib Al Minhas
+              </h3>
+            </div>
+            <div
+              class="
+                flex flex-col
+                w-1/2
+                md:w-[18%]
+                justify-start
+                text-center
+                mb-6
+                md:mb-0
+              "
+            >
+              <img src="/img/team25.png" class="max-w-[134px] min-h-[134px]" />
+              <h3 class="font-lora text-black-light text-sm mt-[14px]">
+                Vladěna Klímková
+              </h3>
+            </div>
+          </div>
+        </div>
+        <!-- Property Management -->
+        <div class="flex flex-col mb-11">
+          <h2 class="font-lora md:text-[44px] text-[32px] mb-10 text-center">
+            Marketing
+          </h2>
+          <div
+            class="flex justify-center md:justify-between flex-row flex-wrap"
+          >
+            <!-- Person details -->
+
+            <div
+              class="
+                flex flex-col
+                w-1/2
+                md:w-[18%]
+                justify-start
+                text-center
+                mb-6
+                md:mb-0
+              "
+            >
+              <img src="/img/team26.png" class="max-w-[134px] min-h-[134px]" />
+              <h3 class="font-lora text-black-light text-sm mt-[14px]">
+                Cecilia Pozo
+              </h3>
+            </div>
+
+            <div
+              class="
+                flex flex-col
+                w-1/2
+                md:w-[18%]
+                justify-start
+                text-center
+                mb-6
+                md:mb-0
+              "
+            >
+              <img src="/img/team27.png" class="max-w-[134px] min-h-[134px]" />
+              <h3 class="font-lora text-black-light text-sm mt-[14px]">
+                Denice Ekdahl
+              </h3>
+            </div>
+            <div
+              class="
+                flex flex-col
+                w-1/2
+                md:w-[18%]
+                justify-start
+                text-center
+                mb-6
+                md:mb-0
+              "
+            >
+              <img src="/img/team28.png" class="max-w-[134px] min-h-[134px]" />
+              <h3 class="font-lora text-black-light text-sm mt-[14px]">
+                Mgbankwo Orjee
+              </h3>
+            </div>
+            <div
+              class="
+                flex flex-col
+                w-1/2
+                md:w-[18%]
+                justify-start
+                text-center
+                mb-6
+                md:mb-0
+              "
+            >
+              <img src="/img/team29.png" class="max-w-[134px] min-h-[134px]" />
+              <h3 class="font-lora text-black-light text-sm mt-[14px]">
+                Nout Golstein
+              </h3>
+            </div>
+            <div
+              class="
+                flex flex-col
+                w-1/2
+                md:w-[18%]
+                justify-start
+                text-center
+                mb-6
+                md:mb-0
+              "
+            >
+              <img src="/img/team30.png" class="max-w-[134px] min-h-[134px]" />
+              <h3 class="font-lora text-black-light text-sm mt-[14px]">
+                Saami Al Samad
+              </h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Foreclosed home Section -->
+
+      <section class="flex flex-col max-w-[1100px] py-24">
+        <div class="flex flex-col md:flex-row mb-14 justify-center">
+          <h2
+            class="
+              text-black-light text-center
+              font-lora
+              text-2xl
+              md:text-4xl
+              mr-2
+            "
+          >
+            Foreclosed homes in
+          </h2>
+          <div class="flex flex-nowrapa justify-center items-center">
+            <span class="text-blue-dark text-4xl font-lora"> Arizona </span>
+            <svg
+              class="fill-current text-blue-dark h-4 w-4 mt-2"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <div
+          class="
+            flex flex-col
+            md:flex-row md:mb-10
+            items-center
+            md:justify-between
+          "
+        >
+          <div
+            class="
+              card
+              flex flex-col
+              rounded
+              shadow-lg
+              mb-10
+              md:mb-0
+              max-w-[300px]
+            "
+          >
+            <img
+              src="/img/card-01.png"
+              class="w-full align-top mb-4"
+              alt="card"
+            />
+            <div class="flex flex-col pb-4 px-4">
+              <div class="flex justify-between items-center">
+                <div class="flex flex-col">
+                  <h5 class="font-lora text-sm text-black-light">
+                    3759 Watkins Rd, Millport, <br />NY 14864
+                  </h5>
+                  <h6 class="font-barlow text-xs text-black-light">
+                    No owner financing available
+                  </h6>
+                </div>
+                <div class="flex flex-col self-start">
+                  <h5 class="font-bold font-barlow text-[#8fc93a] text-xl">
+                    $32,900
+                  </h5>
+                  <h6 class="font-barlow text-xs text-black-light text-left">
+                    CASH PRICE
+                  </h6>
+                </div>
+              </div>
+              <hr class="my-6" />
+              <div class="flex justify-start">
+                <div class="flex flex-col">
+                  <span
+                    class="
+                      font-barlow
+                      text-xl
+                      font-medium
+                      text-black-light
+                      leading-normal
+                    "
+                    >2</span
+                  >
+                  <span class="font-barlow text-xs text-black-light"
+                    >BEDROOMS</span
+                  >
+                </div>
+                <div class="flex flex-col">
+                  <span
+                    class="
+                      font-barlow
+                      text-xl
+                      font-medium
+                      text-black-light
+                      leading-normal
+                    "
+                    >1</span
+                  >
+                  <span class="font-barlow text-xs text-black-light"
+                    >BATHROOMS</span
+                  >
+                </div>
+                <div class="flex flex-col">
+                  <span
+                    class="
+                      font-barlow
+                      text-xl
+                      font-medium
+                      text-black-light
+                      leading-normal
+                    "
+                    >1041</span
+                  >
+                  <span class="font-barlow text-xs text-black-light"
+                    >SIZE (SQ.FT.)</span
+                  >
+                </div>
+              </div>
+              <button
+                class="
+                  w-full
+                  uppercase
+                  bg-blue-dark
+                  text-white
+                  py-4
+                  rounded
+                  mt-6
+                "
+              >
+                View listing
+              </button>
+            </div>
+          </div>
+          <div
+            class="
+              card
+              flex flex-col
+              rounded
+              shadow-lg
+              mb-10
+              md:mb-0
+              max-w-[300px]
+              md:mx-5
+            "
+          >
+            <img
+              src="/img/card-02.png"
+              class="w-full align-top mb-4"
+              alt="card"
+            />
+            <div class="flex flex-col pb-4 px-4">
+              <div class="flex justify-between items-center">
+                <div class="flex flex-col">
+                  <h5 class="font-lora text-sm text-black-light">
+                    3759 Watkins Rd, Millport, <br />NY 14864
+                  </h5>
+                  <h6 class="font-barlow text-xs text-black-light">
+                    No owner financing available
+                  </h6>
+                </div>
+                <div class="flex flex-col self-start">
+                  <h5 class="font-bold font-barlow text-[#8fc93a] text-xl">
+                    $32,900
+                  </h5>
+                  <h6 class="font-barlow text-xs text-black-light text-left">
+                    CASH PRICE
+                  </h6>
+                </div>
+              </div>
+              <hr class="my-6" />
+              <div class="flex justify-start">
+                <div class="flex flex-col">
+                  <span
+                    class="
+                      font-barlow
+                      text-xl
+                      font-medium
+                      text-black-light
+                      leading-normal
+                    "
+                    >2</span
+                  >
+                  <span class="font-barlow text-xs text-black-light"
+                    >BEDROOMS</span
+                  >
+                </div>
+                <div class="flex flex-col">
+                  <span
+                    class="
+                      font-barlow
+                      text-xl
+                      font-medium
+                      text-black-light
+                      leading-normal
+                    "
+                    >1</span
+                  >
+                  <span class="font-barlow text-xs text-black-light"
+                    >BATHROOMS</span
+                  >
+                </div>
+                <div class="flex flex-col">
+                  <span
+                    class="
+                      font-barlow
+                      text-xl
+                      font-medium
+                      text-black-light
+                      leading-normal
+                    "
+                    >1041</span
+                  >
+                  <span class="font-barlow text-xs text-black-light"
+                    >SIZE (SQ.FT.)</span
+                  >
+                </div>
+              </div>
+              <button
+                class="
+                  w-full
+                  uppercase
+                  bg-blue-dark
+                  text-white
+                  py-4
+                  rounded
+                  mt-6
+                "
+              >
+                View listing
+              </button>
+            </div>
+          </div>
+          <div
+            class="
+              card
+              flex flex-col
+              rounded
+              shadow-lg
+              mb-10
+              md:mb-0
+              max-w-[300px]
+            "
+          >
+            <img
+              src="/img/card-03.png"
+              class="w-full align-top mb-4"
+              alt="card"
+            />
+            <div class="flex flex-col pb-4 px-4">
+              <div class="flex justify-between items-center">
+                <div class="flex flex-col">
+                  <h5 class="font-lora text-sm text-black-light">
+                    3759 Watkins Rd, Millport, <br />NY 14864
+                  </h5>
+                  <h6 class="font-barlow text-xs text-black-light">
+                    No owner financing available
+                  </h6>
+                </div>
+                <div class="flex flex-col self-start">
+                  <h5 class="font-bold font-barlow text-[#8fc93a] text-xl">
+                    $32,900
+                  </h5>
+                  <h6 class="font-barlow text-xs text-black-light text-left">
+                    CASH PRICE
+                  </h6>
+                </div>
+              </div>
+              <hr class="my-6" />
+              <div class="flex justify-start">
+                <div class="flex flex-col">
+                  <span
+                    class="
+                      font-barlow
+                      text-xl
+                      font-medium
+                      text-black-light
+                      leading-normal
+                    "
+                    >2</span
+                  >
+                  <span class="font-barlow text-xs text-black-light"
+                    >BEDROOMS</span
+                  >
+                </div>
+                <div class="flex flex-col">
+                  <span
+                    class="
+                      font-barlow
+                      text-xl
+                      font-medium
+                      text-black-light
+                      leading-normal
+                    "
+                    >1</span
+                  >
+                  <span class="font-barlow text-xs text-black-light"
+                    >BATHROOMS</span
+                  >
+                </div>
+                <div class="flex flex-col">
+                  <span
+                    class="
+                      font-barlow
+                      text-xl
+                      font-medium
+                      text-black-light
+                      leading-normal
+                    "
+                    >1041</span
+                  >
+                  <span class="font-barlow text-xs text-black-light"
+                    >SIZE (SQ.FT.)</span
+                  >
+                </div>
+              </div>
+              <button
+                class="
+                  w-full
+                  uppercase
+                  bg-blue-dark
+                  text-white
+                  py-4
+                  rounded
+                  mt-6
+                "
+              >
+                View listing
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- footer -->
+      <footer class="w-full h-full bg-gray-light">
+        <div class="flex flex-col max-w-[940px] w-full mx-auto py-11">
+          <div class="flex flex-col mb-5">
+            <h5 class="text-sm font-barlow text-black-light ml-4 md:ml-0 mb-7">
+              Top U.S. Foreclosure Areas:
+            </h5>
+            <div
+              class="
+                flex
+                md:flex-nowrap
+                flex-wrap
+                justify-center
+                md:justify-between
+              "
+            >
+              <ul class="w-50% mr-2 mb-3">
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+              </ul>
+              <ul class="w-50% mr-2 mb-3">
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+              </ul>
+              <ul class="w-50% mr-2 mb-3">
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+              </ul>
+              <ul class="w-50% mr-2 mb-3">
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+              </ul>
+              <ul class="w-50% mr-2 mb-3">
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+              </ul>
+              <ul class="w-50% mr-2 mb-3">
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex flex-col mb-5">
+            <h5 class="text-sm font-barlow text-black-light ml-4 md:ml-0 mb-7">
+              Top U.S. Foreclosure Areas:
+            </h5>
+            <div
+              class="
+                flex
+                md:flex-nowrap
+                flex-wrap
+                justify-center
+                md:justify-between
+              "
+            >
+              <ul class="w-50% mr-2 mb-3">
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+              </ul>
+              <ul class="w-50% mr-2 mb-3">
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+              </ul>
+              <ul class="w-50% mr-2 mb-3">
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+              </ul>
+              <ul class="w-50% mr-2 mb-3">
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+              </ul>
+              <ul class="w-50% mr-2 mb-3">
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+              </ul>
+              <ul class="w-50% mr-2 mb-3">
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+                <li class="text-xs text-black-light font-barlow mb-1">
+                  Los Angeles foreclosures
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- bottom footer -->
+        <div class="flex justify-between bg-gray-dark">
+          <div
+            class="
+              flex flex-col
+              md:flex-row
+              max-w-[940px]
+              w-full
+              justify-between
+              mx-auto
+              py-11
+              px-4
+              md:px-0
+            "
+          >
+            <div class="flex flex-col">
+              <div class="flex align-middle mb-5">
+                <img src="/img/Logo-gray.svg" alt="logo" class="mr-2" />
+                <p class="font-lora text-sm text-gray-600">
+                  CastleRock
+                  <span class="font-barlow text-xs text-gray-600">REO</span>
+                </p>
+              </div>
+              <p class="text-xs text-bluedark font-barlow">
+                CastleRock REO 333 Westchester Avenue West Building Suite 2100
+                White Plains, NY 10604 Sales: 914-372-7510 © <br />2017
+                CastleRock REO LLC. All Rights Reserved.
+              </p>
+            </div>
+            <div class="flex mt-5 md:mt-0 md:items-end">
+              <a href="#" class="text-black text-xs">Privacy policy</a>
+              <a href="#" class="text-black text-xs ml-3">FAQ</a>
+              <a href="#" class="text-black text-xs ml-3">Contact us</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <script type="text/javascript" src="./custom.js"></script>
+  </body>
+</html>
